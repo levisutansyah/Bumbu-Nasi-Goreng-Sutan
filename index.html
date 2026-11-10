@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUTAN - Bumbu Nasi Goreng Premium</title>
+  <meta name="description" content="SUTAN menghadirkan bumbu nasi goreng premium dengan rasa autentik, aroma menggoda, dan kualitas terbaik untuk hidangan sehari-hari.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header>
+  <div class="container navbar">
+
+    <a href="#home" class="logo">
+      <img src="LOGO SUTAN.png" alt="Logo SUTAN">
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="nav-menu" id="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#produk">Produk</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <a href="https://wa.me/6281261685327"
+       target="_blank"
+       class="btn-nav desktop-btn">
+      Pesan Sekarang
+    </a>
+
+  </div>
+</header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="badge">Bumbu Nasi Goreng Premium</span>
+          <h1>Rasa yang bikin <span>semua orang kangen</span></h1>
+          <p>
+            SUTAN hadir dengan perpaduan rempah pilihan KHAS MINANG dan rasa yang autentik,
+            membuat nasi goreng Anda lebih gurih, harum, dan menggoda setiap suapan.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#produk" class="btn-primary">Beli Sekarang</a>
+            <a href="#keunggulan" class="btn-secondary">Lihat Keunggulan</a>
+          </div>
+        </div>
+
+        <div class="hero-image" aria-label="Produk SUTAN">
+          <img src="LOGO SUTAN.png" alt="Kemasan SUTAN">
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="keunggulan">
+      <div class="container">
+        <h2>Kenapa memilih SUTAN?</h2>
+        <div class="feature-grid">
+          <article class="card">
+            <i class="fa-solid fa-seedling"></i>
+            <h3>Rempah pilihan</h3>
+            <p>Diproses dari bahan berkualitas untuk rasa yang konsisten dan autentik.</p>
+          </article>
+
+          <article class="card">
+            <i class="fa-solid fa-wheat-awn"></i>
+            <h3>Tanpa bahan pengawet</h3>
+            <p>Ditata untuk kebutuhan keluarga yang lebih sehat dan praktis dalam setiap masakan.</p>
+          </article>
+
+          <article class="card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Praktis & cepat</h3>
+            <p>Siap pakai di rumah, warung, atau usaha kuliner untuk hasil maksimal dalam hitungan menit.</p>
+          </article>
+
+          <article class="card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Pengiriman cepat</h3>
+            <p>Mudah dipesan dan dikirim sampai ke tangan Anda dengan layanan yang responsif.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="product" id="produk">
+      <div class="container">
+        <h2>Produk Unggulan</h2>
+        <div class="product-card">
+          <div class="product-visual">
+            <img src="FOTOPRODUCT.png" alt="Kemasan bumbu nasi goreng SUTAN">
+          </div>
+          <div class="product-info">
+            <h3>Bumbu Nasi Goreng SUTAN</h3>
+            <p>
+              Bumbu nasi goreng khas Minang dengan rasa gurih, pedas seimbang,
+              dan aroma rempah autentik.
+            </p>
+            <div class="price">Rp 35.000</div>
+            <a href="https://wa.me/6281261685327" class="buy-btn" target="_blank" rel="noopener noreferrer">Beli Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="kontak">
+      <div class="container">
+        <h2>Siap bikin nasi goreng lebih nikmat?</h2>
+        <p>Pilih SUTAN untuk rasa yang konsisten, autentik, dan selalu bikin nagih.</p>
+        <a href="https://wa.me/6281261685327" class="btn-primary" target="_blank" rel="noopener noreferrer">Hubungi Kami</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 SUTAN. Semua hak dilindungi.</p>
+      <p>Instagram: @sutanofficial</p>
+    </div>
+  </footer>
+
+  <script>
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+    });
+});
+</script>
+</body>
+</html>
